@@ -1,0 +1,376 @@
+
+/* ===========================
+   homepagina(index.html)
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f9fb;
+    padding: 20px;
+    color: #222;
+}
+
+
+
+.header,
+.banner,
+.links,
+.main-text,
+.images,
+.bottom-text,
+.footer {
+    border: 2px solid #3F1DEB;
+    margin-bottom: 20px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+
+
+
+.header {
+    background: #4AC8EA;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+.banner {
+    background: linear-gradient(135deg, #4AC8EA 0%, #3F1DEB 100%);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background: #eaf7ff;
+}
+
+.links a {
+    border: 2px solid #3F1DEB;
+    padding: 15px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background: #3F1DEB;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.links a:hover {
+    background: #4AC8EA;
+    border-color: #4AC8EA;
+}
+
+
+
+
+.main-text,
+.bottom-text {
+    background: #ffffff;
+    font-size: 22px;
+}
+
+
+
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 3px solid #3F1DEB;
+}
+
+
+
+.footer {
+    background: #3F1DEB;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+/* ===========================
+   PORTFOLIO PAGINA
+=========================== */
+
+.portfolio-container {
+    background: #ffffff;
+    border: 2px solid #3F1DEB;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.project-card {
+    background: #ffffff;
+    border: 3px solid #3F1DEB;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #4AC8EA;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    color: #3F1DEB;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===========================
+   DETAILPAGINA
+=========================== */
+
+.detail-container {
+    background: #ffffff;
+    border: 2px solid #3F1DEB;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.detail-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #3F1DEB;
+}
+
+
+.detail-text {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.detail-text h2 {
+    color: #3F1DEB;
+    margin-bottom: 10px;
+}
+
+.detail-text p,
+.detail-text ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.detail-text ul {
+    margin-left: 20px;
+}
+
+/* Terug knop */
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #3F1DEB;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.back-button a:hover {
+    background: #4AC8EA;
+}
+
+@media (max-width: 768px) {
+
+    .detail-image img {
+        height: 220px;
+    }
+}
+/* ===========================
+   CONTACTPAGINA
+=========================== */
+
+.contact-container {
+    background: #ffffff;
+    border: 2px solid #3F1DEB;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #3F1DEB;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.social.email {
+    background: #0078FF;
+}
+
+.social.instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+}
+
+.social.linkedin {
+    background: #0A66C2;
+}
+
+.social.github {
+    background: #24292F;
+}
+
+.social.tiktok {
+    background: linear-gradient(45deg, #25F4EE, #FE2C55);
+}
+
+.social {
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social:hover {
+    opacity: 0.8;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #3F1DEB;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    padding: 12px;
+    background: #3F1DEB;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-btn:hover {
+    background: #4AC8EA;
+}
+
+.social i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+    }
+}
